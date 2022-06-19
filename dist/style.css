@@ -1,0 +1,99 @@
+.button {
+  padding: 0.9rem 1.6rem;
+  background: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 50px;
+  border: 1px solid hsl(233deg, 26%, 24%);
+  cursor: pointer;
+  transition: color 400ms ease-out;
+}
+.button:hover, .button:visited {
+  background: linear-gradient(to left, hsl(192deg, 70%, 51%), hsl(136deg, 65%, 51%));
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  background-color: antiquewhite;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.125rem;
+  color: hsl(233deg, 8%, 62%);
+}
+
+a {
+  text-decoration: none;
+  color: hsl(233deg, 8%, 62%);
+}
+a::hover {
+  text-decoration: none;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-flex-jc-c {
+  justify-content: center;
+}
+.d-flex-jc-sb {
+  justify-content: space-between;
+}
+.d-flex-jc-ar {
+  justify-content: around;
+}
+.d-flex-al-c {
+  align-items: center;
+}
+
+@media (max-width: 63.93em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.header {
+  background-color: #fff;
+}
+.header nav {
+  padding: 24px;
+}
+.header__menu > span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: hsl(233deg, 26%, 24%);
+}
+.header__menu > span:not(last) {
+  margin-bottom: 9px;
+}
+.header__links a {
+  font-size: 0.875rem;
+  color: hsl(233deg, 8%, 62%);
+}
+.header__links a:not(:last-child) {
+  margin-right: 2rem;
+}
+.header__links a:hover {
+  color: hsl(233deg, 26%, 24%);
+}
+
+/*# sourceMappingURL=style.css.map */
