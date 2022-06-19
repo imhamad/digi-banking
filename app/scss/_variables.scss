@@ -1,0 +1,29 @@
+//colors
+$darkBlue: hsl(233, 26%, 24%);
+$limeGreen: hsl(136, 65%, 51%);
+$brightCyan: hsl(192, 70%, 51%);
+$grayishBlue: hsl(233, 8%, 62%);
+$lightGrayishBlue: hsl(220, 16%, 96%);
+$veryLightGray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+
+//fonts
+$font-sm: 0.875rem; // 14 pixel
+$font-med: 1.125rem; // 18 pixel
+
+//button
+.button{
+   padding: 0.9rem 1.6rem;
+   background:linear-gradient(to right, $limeGreen,$brightCyan);
+   font-size: calc($font-sm);
+   font-weight: bold;
+   color: $white;
+   border-radius: 50px;
+   border: 1px solid $darkBlue;
+   cursor: pointer;
+   transition: color 400ms ease-out;
+   &:hover,&:visited{
+      background:linear-gradient(to left, $brightCyan,$limeGreen);
+   }
+}
