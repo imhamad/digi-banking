@@ -16,14 +16,16 @@ $font-med: 1.125rem; // 18 pixel
 .button{
    padding: 0.9rem 1.6rem;
    background:linear-gradient(to right, $limeGreen,$brightCyan);
-   font-size: calc($font-sm);
+   font-size: $font-sm;
    font-weight: bold;
    color: $white;
    border-radius: 50px;
    border: 1px solid $darkBlue;
    cursor: pointer;
-   transition: color 400ms ease-out;
+   transition: opacity 600ms ease-out;
+   opacity: 0.75;
    &:hover,&:visited{
-      background:linear-gradient(to left, $brightCyan,$limeGreen);
+      background:linear-gradient(to bottom, $brightCyan,$limeGreen);
+      opacity: 1;
    }
 }
