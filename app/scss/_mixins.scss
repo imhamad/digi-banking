@@ -25,10 +25,11 @@ $breakpoints-down: ("small": "39.93em", "medium":"63.93em", "large":"87.4em");
 }
 
 @mixin marginSmallScreen {
-   margin:.975rem 1.25rem;
-   
+   margin: .975rem 1.25rem;
+
 }
+
 @mixin lgScreenMargins {
-   margin:.975rem .025rem;
-   
+   margin: .975rem .025rem;
+
 }

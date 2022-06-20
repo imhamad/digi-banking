@@ -11,15 +11,23 @@ body {
    font-size: 1.125rem;
    color: $grayishBlue;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
    margin-top: 0;
 }
-p{
+
+p {
    margin-top: 0;
 }
-.container{
+
+.container {
    max-width: 70rem;
-   margin:auto;
+   margin: auto;
 }
 
 a {

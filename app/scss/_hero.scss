@@ -1,23 +1,26 @@
-.hero{
-   @include breakpoint-up(large){
+.hero {
+   @include breakpoint-up(large) {
       display: flex;
       align-items: center;
    }
-   &__image{
+
+   &__image {
       background-image: url("../images/bg-intro-mobile.svg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
       min-height: 17.625rem;
-      position: relative; 
-      @include breakpoint-up(large){
+      position: relative;
+
+      @include breakpoint-up(large) {
          flex: 3;
-         order:2;
+         order: 2;
          min-height: 41rem;
          background-image: url("../images/bg-intro-desktop.svg");
          background-position: center left;
       }
-      &::before{
+
+      &::before {
          background-image: url(../images/image-mockups.png);
          background-size: 95%;
          background-repeat: no-repeat;
@@ -29,32 +32,38 @@
 
       }
    }
+
    // Flex order is something new i have came across with
-   &__text{
+   &__text {
       text-align: center;
-      h1{
+
+      h1 {
          font-size: 2.31rem;
          line-height: 1.2;
          color: $darkBlue;
          @include marginSmallScreen;
 
       }
-      p{
+
+      p {
          font-size: $font-med;
          @include marginSmallScreen;
       }
-      @include breakpoint-up(large){
+
+      @include breakpoint-up(large) {
          flex: 2;
-         order:1;
+         order: 1;
          text-align: left;
-         h1{
+
+         h1 {
             font-size: 2.31rem;
             line-height: 1.2;
             color: $darkBlue;
             @include lgScreenMargins;
-   
+
          }
-         p{
+
+         p {
             font-size: $font-med;
             @include lgScreenMargins;
          }
